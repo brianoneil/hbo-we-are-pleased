@@ -1,0 +1,27 @@
+{
+  "name": "wme-microsite-html-template",
+  "version": "1.0.0",
+  "description": "HTML repo template for WME microsites.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package": "node ./scripts/package.js",
+    "upload": "npm run build && npm run package -- --send",
+    "build": "node ./build/build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/turnercode/wme-microsite-html-template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/turnercode/wme-microsite-html-template/issues"
+  },
+  "homepage": "https://github.com/turnercode/wme-microsite-html-template#readme",
+  "devDependencies": {
+    "archiver": "^4.0.1",
+    "axios": "^0.26.1",
+    "form-data": "^3.0.0",
+    "fs-extra": "^9.0.1"
+  }
+}
