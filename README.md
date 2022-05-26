@@ -23,14 +23,3 @@ To upload your site, you must have the proper auth token in place in a `.auth` f
 ```bash
 echo "abc-token" > .auth
 ```
-
-## `metadata.json` file
-
-In the root of the repo should be a `metadata.json` file that is used by the publishing service. It must contain the following 4 properties:
-
-- `brand` - The brand you're engaging with - hbo, hbomax, tbs, tnt, trutv, etc
-- `vendor` - The name of your company/agency
-- `engagement` - The name of the site/engagement you're working on - GoT Screener, AdventureTime Game, etc
-- `version` - This is a semantic version number, and must be incremented each time a new version is published
-
-**Important:** These values must match those provided by your brand contacts (except version).  If a non-existent brand/vendor/engagement or a duplicate version number is published, it will result in an error.
